@@ -16,6 +16,8 @@ public class ScremmatApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		//System.out.println("hola mundo desde spring");
 		var consumoAPI = new ConsumoAPI();
-		var json=consumoAPI.obtenerDatos("");
+		var apikey="eb132581";
+		var json=consumoAPI.obtenerDatos("https://www.omdbapi.com/?i=tt3896198&apikey=eb132581");
+		System.out.println("json = " + json);
 	}
 }
